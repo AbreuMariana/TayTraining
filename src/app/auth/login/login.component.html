@@ -1,0 +1,28 @@
+<div class="container">
+    <h2 class="title">Tay Training</h2>
+    <p class="subtitle">Acesse sua conta</p>
+    <div class="login-container">
+        <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+            <div class="form-group">
+                <mat-form-field appearance="fill" class="full-width">
+                    <mat-label>Usuário</mat-label>
+                    <input matInput id="username" formControlName="username" placeholder="Digite seu usuário" />
+                </mat-form-field>
+            </div>
+
+            <div class="form-group">
+                <div class="pass"><label for="password">Senha </label><a routerLink="/auth/esqueci-senha" class="forgot-password">Esqueceu a senha?</a></div>
+
+                <mat-form-field appearance="fill" class="full-width">
+                    <mat-label>Senha</mat-label>
+                    <input matInput id="password" formControlName="password" type="password" placeholder="Digite sua senha" />
+                </mat-form-field>
+
+            </div>
+
+            <button type="submit" class="btn-login">Entrar<mat-icon>login</mat-icon>
+            </button>
+        </form>
+
+    </div>
+</div>

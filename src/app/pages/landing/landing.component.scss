@@ -1,0 +1,148 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+:host {
+  display: block;
+  font-family: "Poppins", sans-serif;
+  background: #fff;
+  color: #111;
+}
+
+/* Header */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 90%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 70px;
+  background: #fff;
+  font-weight: bold;
+  font-size: 20px;
+  color: #ff4081;
+}
+
+.btn-login {
+  background-color: #ff4081;
+  color: #fff;
+  font-size: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  padding: 10px 15px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 160px 23px;
+  background: linear-gradient(to bottom, #fff0f5, #fff);
+}
+
+.hero h1 {
+  font-size: 55px;
+  line-height: 60px;
+  margin-bottom: 16px;
+}
+
+.hero span {
+  color: #ff4081;
+  font-weight: bold;
+  font-size: 55px;
+}
+
+.hero p {
+  color: #666;
+  width: 100%;
+  margin-bottom: 60px;
+  margin-top: 30px;
+  max-width: 600px;
+  margin-inline: auto;
+}
+
+.btn-acessar {
+  background-color: #ff4081;
+  color: #fff;
+  padding: 0.8rem 2rem;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* Funcionalidades */
+.funcionalidades {
+  padding: 48px 32px;
+  text-align: center;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.card {
+  text-align: left;
+  background-color: #fff0f5;
+  border-radius: 10px;
+  padding: 20px;
+  border: 1px solid #ffd6e8;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.icons {
+  background-color: #ffebf0;
+  border: solid 1px #ffe4ed  ;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+}
+.iconArrow{
+  color: white;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+div lucide-icon {
+  font-size: 2rem;
+  background-color: #ffebf0;
+  border-radius: 10px;
+  padding: 0.5rem;
+  display: inline-block;
+  margin-bottom: 1rem;
+  color: #ff4081;
+}
+
+.content{
+ color: #666;
+}
+
+.card h3 {
+  margin: 0.5rem 0;
+}
+
+/* Footer */
+.footer {
+  border-top: 1px solid #eee;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #888;
+  font-size: 0.9rem;
+}
+.logo {
+  font-weight: bold;
+  font-size: 18px;
+  color: #ff4081;
+  padding: 0px;
+  vertical-align: middle;
+  margin-top: 10px;
+}
