@@ -24,7 +24,7 @@ export class AuthModule {}
 const routes: Routes = [
   { path: '', redirectTo: '/login', pathMatch: 'full' }, // Redireciona para login ao iniciar
   {
-    path: 'auth',
+    path: 'login',
     loadChildren: () =>
       import('./auth-routing.module').then((m) => m.AuthRoutingModule),
   },

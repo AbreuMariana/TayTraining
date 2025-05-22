@@ -1,3 +1,4 @@
+
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -13,33 +14,47 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  width: 90%;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  width: 100%;
   display: flex;
   justify-content: space-between;
-  padding: 15px 70px;
   background: #fff;
+  align-items: center;
+  padding: 16px 32px;
+}
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1320px;
+  margin: auto;
+  padding:0px 32px;
+}
+.logo {
   font-weight: bold;
   font-size: 20px;
   color: #ff4081;
+  padding: 0px;
+  vertical-align: middle;
 }
 
 .btn-login {
   background-color: #ff4081;
   color: #fff;
-  font-size: 12px;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-  padding: 10px 15px;
+  padding: 8px 16px;
   border-radius: 10px;
   text-decoration: none;
-  font-weight: bold;
 }
-
 /* Hero Section */
 .hero {
   text-align: center;
-  padding: 160px 23px;
   background: linear-gradient(to bottom, #fff0f5, #fff);
+  height: 100vh;
+  display: grid;
+  place-content: center;
 }
 
 .hero h1 {
@@ -65,18 +80,39 @@ body {
 
 .btn-acessar {
   background-color: #ff4081;
-  color: #fff;
+  text-decoration: none;
   padding: 0.8rem 2rem;
   border-radius: 10px;
-  text-decoration: none;
-  font-weight: bold;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  display: flex; /* Para centralizar o conteúdo (o texto e o ícone) */
+  align-items: center;
+  justify-content: center;
+  justify-self: center;
+}
+.btn-acessar span {
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+}
+.iconArrow {
+  margin: 0px 0px 14px 5px;
+  color: #fff;
+  width: 10px;
+  height: 10px;
+  place-self: center;
+  stroke-width: 2.5; /* Ajuste a espessura da borda */
 }
 
 /* Funcionalidades */
 .funcionalidades {
-  padding: 48px 32px;
+  padding: 80px 16px;
   text-align: center;
+  max-width: 1320px;
+  justify-self: center;
+}
+h2{
+  font-size: 30px;
+  margin: 0px 0px 48px;
 }
 
 .cards {
@@ -90,24 +126,20 @@ body {
 
 .card {
   text-align: left;
-  background-color: #fff0f5;
+  background-color: hsl(339deg 100% 64% / 5%);
   border-radius: 10px;
-  padding: 20px;
-  border: 1px solid #ffd6e8;
+  padding: 24px;
+  border: 1px solid hsl(339deg 100% 64% / 20%);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
 .icons {
   background-color: #ffebf0;
   border: solid 1px #ffe4ed  ;
-  width: 40px;
-  height: 40px;
+  width: 56px;
+  height: 56px;
   border-radius: 10px;
-}
-.iconArrow{
-  color: white;
-  vertical-align: middle;
-  display: inline-block;
+  margin: 0px 0px 16px;
 }
 
 div lucide-icon {
@@ -121,11 +153,13 @@ div lucide-icon {
 }
 
 .content{
- color: #666;
+ color: hsl(240 3.8% 46.1%);
+ font-size: 16px;
 }
 
 .card h3 {
   margin: 0.5rem 0;
+  font-size: 20px;
 }
 
 /* Footer */
@@ -135,14 +169,9 @@ div lucide-icon {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: auto;
   color: #888;
   font-size: 0.9rem;
+  max-width: 1320px;
 }
-.logo {
-  font-weight: bold;
-  font-size: 18px;
-  color: #ff4081;
-  padding: 0px;
-  vertical-align: middle;
-  margin-top: 10px;
-}
+

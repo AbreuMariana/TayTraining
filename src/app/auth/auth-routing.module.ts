@@ -5,7 +5,7 @@ import { NgModule } from '@angular/core';
 
 const routes: Routes = [
   { path: 'login', component: LoginComponent },
-  { path: 'esqueci-senha', component: ForgotPasswordComponent }
+  { path: 'forgot-password', component: ForgotPasswordComponent }
 ];
 
 @NgModule({

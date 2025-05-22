@@ -1,28 +1,52 @@
 <div class="container">
     <h2 class="title">Tay Training</h2>
     <p class="subtitle">Acesse sua conta</p>
+
     <div class="login-container">
         <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
             <div class="form-group">
+                <div class="pass">
+                    <span>Usuário</span>
+                </div>
+                <!--Usuário-->
                 <mat-form-field appearance="fill" class="full-width">
                     <mat-label>Usuário</mat-label>
-                    <input matInput id="username" formControlName="username" placeholder="Digite seu usuário" />
+                    <input matInput id="username" formControlName="username" placeholder="Digite seu usuário"
+                        autocomplete="username" />
+                    <mat-error *ngIf="loginForm.get('username')?.invalid && loginForm.get('username')?.touched">
+                        Usuário é obrigatório
+                    </mat-error>
                 </mat-form-field>
             </div>
 
-            <div class="form-group">
-                <div class="pass"><label for="password">Senha </label><a routerLink="/auth/esqueci-senha" class="forgot-password">Esqueceu a senha?</a></div>
+            <div class="pass">
+                <span>Senha</span>
+                <a routerLink="/auth/forgot-password" class="forgot-password">Esqueceu a senha?</a>
+            </div>
 
+            <!--Senha-->
+            <div class="form-group">
                 <mat-form-field appearance="fill" class="full-width">
                     <mat-label>Senha</mat-label>
-                    <input matInput id="password" formControlName="password" type="password" placeholder="Digite sua senha" />
+                    <input matInput id="password" formControlName="password" [type]="hidePassword ? 'password' : 'text'"
+                        placeholder="Digite sua senha" autocomplete="current-password" />
+                    <ng-container matSuffix>
+                        <button mat-icon-button type="button" (click)="togglePasswordVisibility()">
+                            <lucide-icon [name]="hidePassword ? 'EyeClosed' : 'Eye'"></lucide-icon>
+                        </button>
+                    </ng-container>
+                    <mat-error *ngIf="loginForm.get('password')?.invalid && loginForm.get('password')?.touched">
+                        Senha é obrigatória
+                    </mat-error>
                 </mat-form-field>
-
             </div>
 
-            <button type="submit" class="btn-login">Entrar<mat-icon>login</mat-icon>
+            <button type="submit" routerLink="/auth/login" class="btn-login"
+                [disabled]="loginForm.invalid"><span>Entrar</span><lucide-icon name="LogIn"></lucide-icon>
             </button>
         </form>
-
     </div>
 </div>
+
+<a routerLink="/auth/login" class="btn-acessar"><span>Acessar</span><lucide-icon class="iconArrow"
+        name="arrow-right"></lucide-icon></a>

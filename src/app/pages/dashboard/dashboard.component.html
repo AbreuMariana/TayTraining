@@ -1,0 +1,73 @@
+<header class="header">
+  <div class="container">
+    <div class="logo">Tay Training</div>
+    <a routerLink="/auth/login" class="btn-login">Entrar</a>
+  </div>
+</header>
+
+<div class="dashboard-container">
+  <h1 class="title">Painel de Controle</h1>
+  <p class="subtitle">Bem-vindo ao Tay Training, organize seus treinos.</p>
+
+  <div class="cards-container">
+    <mat-card class="card">
+      <div class="card-content">
+        <div class="card-title">Exercícios</div>
+        <div class="card-total">56</div>
+        <button mat-button color="primary" class="access-btn">
+          Acessar <lucide-icon name="arrow-right"></lucide-icon>
+        </button>
+      </div>
+    </mat-card>
+
+    <mat-card class="card">
+      <div class="card-content">
+        <div class="card-title">Métodos de Treino</div>
+        <div class="card-total">14</div>
+        <button mat-button color="primary" class="access-btn">
+          Acessar <lucide-icon name="arrow-right"></lucide-icon>
+        </button>
+      </div>
+    </mat-card>
+
+    <mat-card class="card">
+      <div class="card-content">
+        <div class="card-title">Fichas de Treino</div>
+        <div class="card-total">23</div>
+        <button mat-button color="primary" class="access-btn">
+          Acessar <lucide-icon name="arrow-right"></lucide-icon>
+        </button>
+      </div>
+    </mat-card>
+
+    <mat-card class="card">
+      <div class="card-content">
+        <div class="card-title">Treinos</div>
+        <div class="card-total">8</div>
+        <button mat-button color="primary" class="access-btn">
+          Acessar <lucide-icon name="arrow-right"></lucide-icon>
+        </button>
+      </div>
+    </mat-card>
+  </div>
+
+  <div class="bottom-section">
+    <mat-card class="activity-card">
+      <h2>Atividade Recente</h2>
+      <ul>
+        <li>Ficha A - Membros Superiores <span class="info">Hoje, 10:45</span></li>
+        <li>Rosca Direta <span class="info">Ontem, 18:30</span></li>
+        <li>Drop Set <span class="info">23/05, 14:15</span></li>
+        <li>Treino Semanal - Aluno Maria <span class="info">20/05, 09:00</span></li>
+      </ul>
+    </mat-card>
+
+    <mat-card class="summary-card">
+      <h2>Resumo</h2>
+      <div class="summary-item">Exercícios cadastrados <span class="value">56</span></div>
+      <div class="summary-item">Métodos de treino <span class="value">14</span></div>
+      <div class="summary-item">Fichas criadas <span class="value">23</span></div>
+      <div class="summary-item">Treinos programados <span class="value">8</span></div>
+    </mat-card>
+  </div>
+</div>

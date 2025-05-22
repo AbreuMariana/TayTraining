@@ -1,80 +1,104 @@
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  background: #fff;
-}
-.container{
+.container {
   display: grid;
-  place-self: center;
-  background-color: aqua;
-  margin: 40px;
-  background: #fff;
+  place-content: center;
+  background: hsl(339deg 100% 95% / 30%);
+  height: 100vh;
+  width: 100%;
+
+  margin: auto;
+}
 
 .title {
 
-  font-size: 24px;
+  font-size: 30px;
   font-weight: bold;
-  color: #ff4081;
+  color: #ff4788;
   margin-top: 100px;
   text-align: center;
-  margin-bottom: 0px;
+  margin: 0px 0px 6px;
 }
+
 .subtitle {
-  font-size: 14px;
-  color: #666;
-  margin-bottom: 20px;
-  margin-top: 0px;
+  font-size: 16px;
+  color: #71717A;
   text-align: center;
+  margin: 0px 0px 24px;
 }
+
 .login-container {
-  text-align: center;
   background: #fff;
-  padding: 2rem;
+  padding: 32px;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  width: 350px;
+  width: 380px;
   margin: auto;
-
-
-
-  .form-group {
-    margin-bottom: 15px;
-    text-align: left;
-
-    label {
-      display: block;
-      font-size: 14px;
-      margin-bottom: 5px;
-    }
-
-    input {
-      width: 100%;
-      padding: 8px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-    }
-  }
-
-  .pass {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .forgot-password {
-    display: block;
-    text-align: right;
-    font-size: 12px;
-    color: #ff4081;
-    margin-bottom: 5px;
-  }
-
-  .btn-login {
-    width: 100%;
-    background: #ff4081;
-    color: white;
-    border: none;
-    padding: 10px;
-    border-radius: 10px;
-    cursor: pointer;
-  }
+  border: 1px solid rgb(255 255 255 / 20%);
 }
+.full-width {
+  width: 100%;
 }
+mat-form-field {
+  width: 100%;
+  padding: 0px;
+}
+.form-group {
+  margin-bottom: 15px;
+  text-align: left;
+  width: 100%;
+}
+
+label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  width: 90%;
+  height: 35px;
+  font-size: 14px;
+  margin: auto;
+}
+
+.pass {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Alinha o conteúdo verticalmente */
+}
+
+.forgot-password {
+  display: inline-block;
+  text-align: right;
+  font-size: 12px;
+  color: #ff4081;
+  cursor: pointer; /* Adiciona cursor de link */
+  z-index: 10;
+  text-decoration: none;
+}
+
+
+.btn-login {
+  width: 88%;
+  background: #ff4081;
+  color: white;
+  border: none;
+  margin: 15px;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+lucide-icon {
+  margin: 0px 0px 14px 5px;
+  color: #fff;
+  width: 10px;
+  height: 10px;
+  place-self: center;
+  stroke-width: 2.5; /* Ajuste a espessura da borda */
+}
+
+
+
+
+
